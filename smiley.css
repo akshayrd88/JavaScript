@@ -1,0 +1,35 @@
+.round{
+    height: 200px;
+    width: 200px;
+    margin-top: 200px;
+    margin-left: 200px;
+    border-radius: 200px;
+    background: yellow;
+}
+
+.lefteye{
+    height: 25px;
+    width: 25px;
+    margin-top: 70px;
+    margin-left: 50px;
+    border-radius: 20px;
+    background: black;
+}
+
+.righteye{
+    height: 25px;
+    width: 25px;
+    margin-top: 70px;
+    margin-left: 150px;
+    border-radius: 20px;
+    background: black;
+}
+
+.mouth{
+    height: 10px;
+    width: 70px;
+    margin-top: 45px;
+    margin-left: 70px;
+    border-radius: 70px;
+    background: black;
+}
