@@ -1,23 +1,26 @@
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background: grey;
+    overflow: hidden;
+    background-color: grey;
+    border-radius: 4px 4px 4px 4px;
 }
 
-li{
-  float: left;
+li {
+    float: left;
 }
 
-li a{
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-li a:hover{
-  background-color:orangered;
+li a:hover {
+    background-color: orangered;
 }
 
 .rightside{
@@ -25,7 +28,34 @@ li a:hover{
     width: 30%;
   }
   
-  .leftside{
+.leftside{
+    border: 0;
+    padding: 10px;
     float: left;
-    width: 69%;
+    width: 68%;
   }
+
+.footer{
+    position: fixed;
+    bottom: 2%;
+    width: 98%;
+    background-color: grey;
+    color: white;
+    text-align: left;
+    border-radius: 4px 4px 4px 4px;
+}  
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
