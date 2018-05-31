@@ -1,83 +1,99 @@
+body{
+	background-color: #f1f1f1;
+	padding-right: 100px;
+	padding-left: 100px;
+}
 
-body {
-    padding: 10px;
-    background: #f1f1f1;
+img{
+	height: 80px;
+	width: 300px;
+}
+
+ul{
+	list-style-type: none;
+
+}
+
+li{
+display: inline;
+text-align: center;
+
+}
+
+nav{
+	border: 1px solid grey;
+	background-color: grey;
+	text-align: left;
+	
+}
+
+li a{
+text-decoration: none;
+margin: 5px;
+color: white;
 }
 
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: grey;
-    border-radius: 4px 4px 4px 4px;
+
+.leftside h3{
+	color: red;
 }
 
-li {
-    float: left;
+
+
+.leftside i{
+	color: #999999;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.pleft{
+	width:90%;
+	float: left;
+	
 }
 
-li a:hover {
-    background-color: orangered;
-}
+.pright{
+	width:25%;
+	float: right;
 
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 4px 4px 4px 4px;
 }
-
-.header h3{
-    color: red;
+.rightside, .leftside{
+	background-color: white;
+	padding: 2%;
+	margin-top:1%;
 }
 
 .rightside{
-    float: left;
-    width: 30%;
-  }
-  
-.leftside{
-    border: 0;
-    padding: 10px;
-    float: left;
-    width: 68%;
-  }
+	margin-left: 3%;
+	padding-right: 5%;
+	padding-bottom: 5%
 
-.footer{
-    position: fixed;
-    bottom: 2%;
-    width: 98%;
-    background-color: grey;
-    color: white;
-    text-align: left;
-    border-radius: 4px 4px 4px 4px;
-}  
-
-span {
-    color: red;
-  }
-
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-    }
 }
 
-@media screen and (max-width: 400px) {
-    .topnav a {
-        float: none;
-        width: 100%;
-    }
+footer{
+	background-color: grey;
+	border: 1px solid grey;
+	padding-left: 2%;
+	margin-top: 2%;
 }
 
+footer span{
+	color: red;
+}
+
+.mainclass{
+	display: flex;
+}
+
+
+@media (max-width: 800px){
+	li{
+		display: block;
+		text-align: center;
+	}
+
+	.rightside, .leftside{
+		
+		width: 100%;
+
+	}
+}
