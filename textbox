@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>User</title>
+    </head>
+    <body>  
+        <p>Username: </p>     
+        <input type="text" id="myText" placeholder="Enter text">
+        <input type="text" id="myFeed" value="">
+
+        <br><br>
+        <button id="reflect">--)</button>
+        <button id="pause">||</button>
+        <button id="revert">(--</button>
+        <script src="assignment2.js"></script>
+    </body>
+</html>
