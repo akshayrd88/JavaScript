@@ -17,6 +17,16 @@ function reset(){
     document.getElementById('input').reset();
 }
 
+function validateForm() {
+    var x = document.forms["input"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        document.getElementById('emailerr').innerHTML= "Enter a valid Email, Try again!!";
+        return false;
+    }
+}
+
 document.getElementById('btn').addEventListener('click',function(){
     var user={
         'username': document.getElementById('UName').value,
@@ -34,16 +44,19 @@ document.getElementById('btn').addEventListener('click',function(){
         document.getElementById('unameerr').innerHTML= "Enter a Username, Try again!!"
     }
     if(user.password == ""){
-        document.getElementById('pwderr').innerHTML= "Enter a Username, Try again!!"
+        document.getElementById('pwderr').innerHTML= "Enter a Password, Try again!!"
     }
     if(user.company == ""){
-        document.getElementById('comerr').innerHTML= "Enter a Username, Try again!!"
+        document.getElementById('comerr').innerHTML= "Enter a Company, Try again!!"
     }
     if(user.email == ""){
-        document.getElementById('emailerr').innerHTML= "Enter a Username, Try again!!"
+        document.getElementById('emailerr').innerHTML= "Enter a Email, Try again!!"
+    }
+    else{
+        validateForm();
     }
     if(user.location == ""){
-        document.getElementById('locerr').innerHTML= "Enter a Username, Try again!!"
+        document.getElementById('locerr').innerHTML= "Enter a Location, Try again!!"
     }
 
 usertable();
